@@ -7,186 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9febc0f2-7774-4683-a821-7b0b74a9997f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_0_0_RC2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_0_RC2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/filter/CORSFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/meta/po/User/RechargeOrderPO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.13fb9828.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.13fb9828.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.1c2b7936.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.1c2b7936.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.5252eb6c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.5252eb6c.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.fd8efacf.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.fd8efacf.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.0280f5ec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.0280f5ec.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.02df5ed1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.02df5ed1.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.1c9c71e9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.1c9c71e9.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.2130590e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.2130590e.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.372ea097.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.372ea097.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.4c1a0c49.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.4c1a0c49.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.50191553.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.50191553.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.73eb7cda.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.73eb7cda.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.832235f4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.832235f4.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.8372a77e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.8372a77e.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.8c729c3f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.8c729c3f.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.8f229f89.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.8f229f89.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.bef022f2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.bef022f2.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.c6d81da2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.c6d81da2.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.cb3c71c0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.cb3c71c0.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.cff3b436.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.cff3b436.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.f16da63c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.f16da63c.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.f9196ad2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.f9196ad2.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/terabits/filter/CORSFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/terabits/meta/po/User/RechargeOrderPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/filter/CORSFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/meta/po/User/RechargeOrderPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/lib/junit-jupiter-api-5.0.0-RC2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/lib/junit-platform-commons-1.0.0-RC2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/css/main.13fb9828.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/css/main.13fb9828.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/css/main.1c2b7936.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/css/main.1c2b7936.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/css/main.5252eb6c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/css/main.5252eb6c.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/css/main.fd8efacf.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/css/main.fd8efacf.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.0280f5ec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.0280f5ec.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.02df5ed1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.02df5ed1.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.1c9c71e9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.1c9c71e9.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.2130590e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.2130590e.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.372ea097.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.372ea097.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.4c1a0c49.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.4c1a0c49.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.50191553.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.50191553.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.73eb7cda.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.73eb7cda.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.832235f4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.832235f4.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.8372a77e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.8372a77e.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.8c729c3f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.8c729c3f.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.8f229f89.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.8f229f89.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.bef022f2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.bef022f2.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.c6d81da2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.c6d81da2.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.cb3c71c0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.cb3c71c0.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.cff3b436.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.cff3b436.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.f16da63c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.f16da63c.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.f9196ad2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/js/main.f9196ad2.js.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/constant/HuaweiPlatformGlobal.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/constant/HuaweiPlatformGlobal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/controller/communicationcontroller.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/controller/communicationcontroller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/controller/maincontroller.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/controller/maincontroller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/controller/managecontroller.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/controller/managecontroller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/controller/recordcontroller.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/controller/recordcontroller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/mapper/AdminMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/mapper/AdminMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/mapper/StatisticMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/mapper/StatisticMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/mapper/UserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/meta/po/Admin/AdminRecordPO.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/meta/po/Admin/AdminRecordPO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/meta/po/Statistic/AuxcalPO.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/meta/po/Statistic/AuxcalPO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/meta/po/User/RechargeRecordPO.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/meta/po/User/RechargeRecordPO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/service/AdminService.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/service/AdminService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/service/StatisticService.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/service/StatisticService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/service/impl/AdminServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/service/impl/AdminServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/service/impl/StatisticServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/service/impl/StatisticServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/terabits/utils/PlatformGlobal.class" afterPath="$PROJECT_DIR$/target/classes/com/terabits/utils/PlatformGlobal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/constant/HuaweiPlatformGlobal.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/constant/HuaweiPlatformGlobal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/controller/communicationcontroller.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/controller/communicationcontroller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/controller/maincontroller.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/controller/maincontroller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/controller/managecontroller.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/controller/managecontroller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/controller/recordcontroller.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/controller/recordcontroller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/mapper/AdminMapper.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/mapper/AdminMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/mapper/StatisticMapper.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/mapper/StatisticMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/mapper/UserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/meta/po/Admin/AdminRecordPO.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/meta/po/Admin/AdminRecordPO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/meta/po/Statistic/AuxcalPO.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/meta/po/Statistic/AuxcalPO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/meta/po/User/RechargeRecordPO.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/meta/po/User/RechargeRecordPO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/AdminService.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/AdminService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/StatisticService.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/StatisticService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/UserService.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/impl/AdminServiceImpl.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/impl/AdminServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/impl/StatisticServiceImpl.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/impl/StatisticServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/utils/PlatformGlobal.class" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/com/terabits/utils/PlatformGlobal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/watermachineplateform_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/watermachineplateform_war_exploded.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/asset-manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/service-worker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.2be4d3e5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.2be4d3e5.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.46b991a0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.46b991a0.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.610bbaf4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.610bbaf4.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.9c59bf16.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.9c59bf16.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.b936f333.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.b936f333.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/media/logo.5d5d9eef.svg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/constant/HuaweiPlatformGlobal.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/constant/HuaweiPlatformGlobal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/controller/communicationcontroller.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/controller/communicationcontroller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/controller/maincontroller.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/controller/maincontroller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/controller/managecontroller.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/controller/managecontroller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/controller/recordcontroller.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/controller/recordcontroller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/mapper/AdminMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/mapper/AdminMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/mapper/StatisticMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/mapper/StatisticMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/mapper/UserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/meta/po/Admin/AdminRecordPO.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/meta/po/Admin/AdminRecordPO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/meta/po/Statistic/AuxcalPO.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/meta/po/Statistic/AuxcalPO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/meta/po/User/RechargeRecordPO.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/meta/po/User/RechargeRecordPO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/service/AdminService.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/service/AdminService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/service/StatisticService.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/service/StatisticService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/service/impl/AdminServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/service/impl/AdminServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/service/impl/StatisticServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/service/impl/StatisticServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/terabits/utils/PlatformGlobal.java" afterPath="$PROJECT_DIR$/src/main/java/com/terabits/utils/PlatformGlobal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/AdminMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/AdminMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/StatisticMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/StatisticMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/asset-manifest.json" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/asset-manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manifest.json" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/service-worker.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/service-worker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/media/logo.5d5d9eef.svg" afterPath="$PROJECT_DIR$/src/main/webapp/static/media/logo.5d5d9eef.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/AdminMapper.xml" afterPath="$PROJECT_DIR$/target/classes/AdminMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/StatisticMapper.xml" afterPath="$PROJECT_DIR$/target/classes/StatisticMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/AdminMapper.xml" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/AdminMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/StatisticMapper.xml" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/StatisticMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/UserMapper.xml" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/templates/asset-manifest.json" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/templates/asset-manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/templates/index.jsp" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/templates/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/templates/manifest.json" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/templates/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/templates/service-worker.js" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/templates/service-worker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/watermachine-plateform/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watermachine-plateform/static/media/logo.5d5d9eef.svg" afterPath="$PROJECT_DIR$/target/watermachine-plateform/static/media/logo.5d5d9eef.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watermachineplateform.iml" afterPath="$PROJECT_DIR$/watermachineplateform.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -216,8 +53,8 @@
       <file leaf-file-name="maincontroller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/terabits/controller/maincontroller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+            <state relative-caret-position="204">
+              <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -654,43 +491,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="watermachineplateform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="watermachineplateform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="watermachineplateform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="watermachineplateform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="main.b936f333.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="watermachineplateform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="watermachineplateform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="watermachineplateform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="watermachineplateform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -932,12 +733,12 @@
       <workItem from="1503882552948" duration="10912000" />
       <workItem from="1503987107793" duration="7445000" />
       <workItem from="1503999669977" duration="9171000" />
-      <workItem from="1504056442575" duration="13090000" />
+      <workItem from="1504056442575" duration="13985000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243595000" />
+    <option name="totallyTimeSpent" value="244490000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1041,14 +842,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-conf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/terabits/meta/po/User/RechargeOrderPO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/terabits/meta/po/User/RechargeRecordPO.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1285,14 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/main.b936f333.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1424,10 +1209,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="76" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/terabits/controller/usertotalcontroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/terabits/controller/maincontroller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        <state relative-caret-position="204">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
           <folding />
         </state>
       </provider>
