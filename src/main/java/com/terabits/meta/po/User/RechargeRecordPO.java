@@ -4,6 +4,7 @@ public class RechargeRecordPO {
     private int id;
     private String openId;
     private Double payment;
+    private Double present;
     private String orderId;
     private String tradeno;
     private String gmtCreate;
@@ -56,12 +57,21 @@ public class RechargeRecordPO {
         this.gmtCreate = gmtCreate;
     }
 
+    public Double getPresent() {
+        return present;
+    }
+
+    public void setPresent(Double present) {
+        this.present = present;
+    }
+
     @Override
     public String toString() {
         return "RechargeRecordPO{" +
                 "id=" + id +
                 ", openId='" + openId + '\'' +
                 ", payment=" + payment +
+                ", present=" + present +
                 ", orderId='" + orderId + '\'' +
                 ", tradeno='" + tradeno + '\'' +
                 ", gmtCreate='" + gmtCreate + '\'' +

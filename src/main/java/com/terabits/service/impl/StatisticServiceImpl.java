@@ -38,4 +38,36 @@ public class StatisticServiceImpl implements StatisticService {
         }
         return totalPO;
     }
+
+    public int updateTodayAuxcal(AuxcalPO auxcalPO){
+        SqlSession session = DBTools.getSession();
+        StatisticMapper statisticMapper = session.getMapper(StatisticMapper.class);
+        int result=0;
+        try {
+            result=statisticMapper.updateTodayAuxcal(auxcalPO);
+            session.commit();
+        }catch (Exception e){
+            e.printStackTrace();
+            session.rollback();
+        }finally {
+            session.close();
+        }
+        return result;
+    }
+
+    public int updateTotal(TotalPO totalPO){
+        SqlSession session = DBTools.getSession();
+        StatisticMapper statisticMapper = session.getMapper(StatisticMapper.class);
+        int result=0;
+        try {
+            result=statisticMapper.updateTotal(totalPO);
+            session.commit();
+        }catch (Exception e){
+            e.printStackTrace();
+            session.rollback();
+        }finally {
+            session.close();
+        }
+        return result;
+    }
 }

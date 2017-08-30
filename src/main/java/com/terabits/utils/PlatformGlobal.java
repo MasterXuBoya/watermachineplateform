@@ -36,6 +36,7 @@ public class PlatformGlobal {
 
 
     @SuppressWarnings("unchecked")
+    //获取accesstoken
     public static String login(HttpsUtil httpsUtil) throws Exception {
 
         Map<String, String> paramLogin = new HashMap<String, String>();
@@ -55,33 +56,32 @@ public class PlatformGlobal {
     //模拟透传的模式，下发命令用这个方法
     public static String command(byte[] data, String terminalId) throws Exception{
         String command = Base64.encodeBase64String(data);
-
+        //terminalId = "fea083bc-33af-4c3c-b382-d76e18363292";
         HttpsUtil httpsUtil = new HttpsUtil();
         httpsUtil.initSSLConfigForTwoWay();
-
-        String accessToken = login(httpsUtil);
-        urlPostAsynCmd = String.format(urlPostAsynCmd, terminalId);
-
+        //****************************tempUrl******************************************
+        String tempUrl = String.format(urlPostAsynCmd, terminalId);
+        //****************************jsonRequest***************************************
         String method = "START";
         ObjectNode paras = JsonUtil.convertObject2ObjectNode("{\"rawData\":\"" + command +"\"}");
-
         Map<String, Object> paramCommand = new HashMap<String, Object>();
         paramCommand.put("serviceId", "RawData");
         paramCommand.put("method", method);
         paramCommand.put("paras", paras);
 
+
         Map<String, Object> paramPostAsynCmd = new HashMap<String, Object>();
         paramPostAsynCmd.put("command", paramCommand);
         paramPostAsynCmd.put("callbackUrl", callbackUrl);
         paramPostAsynCmd.put("expireTime",expireTime);
-
         String jsonRequest = JsonUtil.jsonObj2Sting(paramPostAsynCmd);
-
+        //*******************************header*******************************************
+        String accessToken = login(httpsUtil);
         Map<String, String> header = new HashMap<String, String>();
         header.put("app_key", appId);
         header.put("Authorization", "Bearer " + accessToken);
 
-        HttpResponse httpResponse = httpsUtil.doPostJson(urlPostAsynCmd, header, jsonRequest);
+        HttpResponse httpResponse = httpsUtil.doPostJson(tempUrl, header, jsonRequest);
 
         String responseBody = httpsUtil.getHttpResponseBody(httpResponse);
 
@@ -94,7 +94,7 @@ public class PlatformGlobal {
         httpsUtil.initSSLConfigForTwoWay();
 
         String accessToken = login(httpsUtil);
-        urlPostAsynCmd = String.format(urlPostAsynCmd, terminalId);
+        String tempUrl = String.format(urlPostAsynCmd, terminalId);
 
         Map<String, Object> paramCommand = new HashMap<String, Object>();
         paramCommand.put("serviceId", serviceId);
@@ -112,7 +112,7 @@ public class PlatformGlobal {
         header.put("app_key", appId);
         header.put("Authorization", "Bearer " + accessToken);
 
-        HttpResponse httpResponse = httpsUtil.doPostJson(urlPostAsynCmd, header, jsonRequest);
+        HttpResponse httpResponse = httpsUtil.doPostJson(tempUrl, header, jsonRequest);
 
         String responseBody = httpsUtil.getHttpResponseBody(httpResponse);
 

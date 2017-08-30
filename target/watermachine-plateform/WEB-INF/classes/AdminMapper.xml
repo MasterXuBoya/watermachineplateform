@@ -18,6 +18,7 @@
     <resultMap id="adminRecordMap" type="com.terabits.meta.po.Admin.AdminRecordPO">
         <id property="id" column="id" javaType="java.lang.Integer"></id>
         <result property="adminName" column="adminname" javaType="java.lang.String"></result>
+        <result property="phone" column="phone" javaType="java.lang.String"></result>
         <result property="money" column="money" javaType="java.lang.Double"></result>
         <result property="gmtCreate" column="gmtcreate" javaType="java.lang.String"></result>
     </resultMap>
@@ -32,12 +33,16 @@
         select password from admin WHERE name=#{account}
     </select>
 
+    <select id="selectAdmin" resultMap="adminMap" parameterType="java.lang.String">
+        select * from admin WHERE name=#{account}
+    </select>
+
     <insert id="insertAdmin">
         INSERT INTO admin(name,password)VALUES (#{arg0},#{arg1})
     </insert>
 
     <insert id="insertAdminRecord" parameterType="com.terabits.meta.po.Admin.AdminRecordPO">
-        INSERT INTO adminrecord(adminname,money,gmtcreate) VALUES (#{adminName},#{money},now())
+        INSERT INTO adminrecord(adminname,money,gmtcreate,phone) VALUES (#{adminName},#{money},now(),#{phone})
     </insert>
 
     <select id="selectAllAdminRecord" resultMap="adminRecordMap">

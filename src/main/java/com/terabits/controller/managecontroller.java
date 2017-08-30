@@ -51,18 +51,18 @@ public class managecontroller {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");//可以方便地修改日期格式
         String today = dateFormat.format( now );
         AuxcalPO auxcalPO=statisticService.selectTodayAuxcal(today);
-        double todayrecharge=auxcalPO.getRecharge();
-        double todayconsume=auxcalPO.getPayment();
 
 
         TotalPO totalPO=statisticService.selectTotal();
         double remain=totalPO.getRemain();
 
         JSONObject manage1=new JSONObject();
-        manage1.put("todayrecharge",todayrecharge);
-        manage1.put("todayconsume",todayconsume);
+        manage1.put("recharge",auxcalPO.getRecharge());
+        manage1.put("present",auxcalPO.getPresent());
+        manage1.put("todayrecharge",auxcalPO.getRecharge()+auxcalPO.getPresent());
+        manage1.put("todayconsume",auxcalPO.getPayment());
         manage1.put("remain",remain);
-        System.out.println(manage1);
+        //System.out.println(manage1);
         //**************************获取前一个月的充值，消费情况****************************************************
         JSONObject manage2=new JSONObject();
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
@@ -79,13 +79,13 @@ public class managecontroller {
 
             auxcalPO1=statisticService.selectTodayAuxcal(tmp);
             date[i]=tmp;
-            recharge[i]=auxcalPO1.getRecharge();
+            recharge[i]=auxcalPO1.getRecharge()+auxcalPO1.getPresent();
             payment[i]=auxcalPO1.getPayment();
         }
         manage2.put("date",date);
         manage2.put("recharge",recharge);
         manage2.put("payment",payment);
-        System.out.println(manage2);
+        //System.out.println(manage2);
 
         //******************************************************************************
         jsonObject.put("manage1",manage1);

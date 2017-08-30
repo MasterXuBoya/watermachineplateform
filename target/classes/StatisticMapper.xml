@@ -11,6 +11,7 @@
         <result property="flow" column="flow" javaType="java.lang.Double"></result>
         <result property="recharge" column="recharge" javaType="java.lang.Double"></result>
         <result property="payment" column="payment" javaType="java.lang.Double"></result>
+        <result property="present" column="present" javaType="java.lang.Double"></result>
     </resultMap>
 
     <resultMap id="totalMap" type="com.terabits.meta.po.Statistic.TotalPO">
@@ -34,4 +35,12 @@
     <select id="selectTotal" resultMap="totalMap">
         select * from total WHERE id=1
     </select>
+
+    <update id="updateTodayAuxcal" parameterType="com.terabits.meta.po.Statistic.AuxcalPO">
+      UPDATE auxcal SET flow=#{flow},recharge=#{recharge},present=#{present},payment=#{payment} WHERE gmtcreate=#{gmtCreate}
+    </update>
+
+    <update id="updateTotal" parameterType="com.terabits.meta.po.Statistic.TotalPO">
+        UPDATE total SET flow=#{flow},recharge=#{recharge},payment=#{payment},remain=#{remain}
+    </update>
 </mapper>

@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface AdminService {
     public String selectAdminByAccount(String account) ;
+    public AdminPO selectAdmin(String account);
     public int insertAdmin(String name,String password);
     public int insertAdminRecord(AdminRecordPO adminRecordPO);
     public List<AdminRecordPO> selectAllAdminRecord();

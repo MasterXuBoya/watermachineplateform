@@ -9,6 +9,7 @@ import java.util.List;
 public interface AdminMapper {
     //返回管理员密码
     public String selectAdminByAccount(@Param("account") String account) throws Exception;
+    public AdminPO selectAdmin(@Param("account") String account) throws Exception;
     public int insertAdmin(@Param("name") String name,@Param("password") String password) throws Exception;
     //插入管理员充值记录
     public int insertAdminRecord(AdminRecordPO adminRecordPO) throws Exception;

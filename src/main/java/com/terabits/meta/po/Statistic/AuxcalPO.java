@@ -5,6 +5,7 @@ public class AuxcalPO {
     private String gmtCreate;
     private Double flow;
     private Double recharge;
+    private Double present;
     private Double payment;
 
     public int getId() {
@@ -47,6 +48,14 @@ public class AuxcalPO {
         this.payment = payment;
     }
 
+    public Double getPresent() {
+        return present;
+    }
+
+    public void setPresent(Double present) {
+        this.present = present;
+    }
+
     @Override
     public String toString() {
         return "AuxcalPO{" +
@@ -54,6 +63,7 @@ public class AuxcalPO {
                 ", gmtCreate='" + gmtCreate + '\'' +
                 ", flow=" + flow +
                 ", recharge=" + recharge +
+                ", present=" + present +
                 ", payment=" + payment +
                 '}';
     }

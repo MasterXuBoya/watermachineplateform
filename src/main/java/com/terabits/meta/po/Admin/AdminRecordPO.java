@@ -5,6 +5,7 @@ public class AdminRecordPO {
     private String adminName;
     private double money;
     private String gmtCreate;
+    private String phone;
 
     public int getId() {
         return id;
@@ -37,5 +38,13 @@ public class AdminRecordPO {
 
     public void setGmtCreate(String gmtCreate) {
         this.gmtCreate = gmtCreate;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

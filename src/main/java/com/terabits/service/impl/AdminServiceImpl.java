@@ -13,6 +13,9 @@ import java.util.List;
 import com.terabits.utils.DBTools;
 import org.apache.ibatis.session.SqlSession;
 
+ //增删改 session.commit(),session.rollback(),session.close()
+//查询操作，session.close()
+
 @Service("adminService")
 public class AdminServiceImpl implements AdminService{
 
@@ -29,6 +32,20 @@ public class AdminServiceImpl implements AdminService{
             session.close();
         }
         return password;
+    }
+
+    public AdminPO selectAdmin(String account){
+        SqlSession session = DBTools.getSession();
+        AdminMapper adminMapper = session.getMapper(AdminMapper.class);
+        AdminPO adminPO=new AdminPO();
+        try {
+            adminPO=adminMapper.selectAdmin(account);
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return adminPO;
     }
 
     //增删改 session.commit(),session.rollback(),session.close()
