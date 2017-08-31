@@ -2,7 +2,9 @@ package com.terabits.service.impl;
 
 import com.terabits.mapper.StatisticMapper;
 import com.terabits.mapper.UserMapper;
+import com.terabits.meta.bo.TimeSpanBO;
 import com.terabits.meta.po.User.ConsumeOrderPO;
+import com.terabits.meta.po.User.RechargeRecordPO;
 import com.terabits.meta.po.User.UserPO;
 import com.terabits.service.UserService;
 import com.terabits.utils.DBTools;
@@ -92,5 +94,47 @@ public class UserServiceImpl implements UserService{
             session.close();
         }
         return userPOList;
+    }
+
+    public int selectNewUserByTime(TimeSpanBO timeSpanBO){
+        SqlSession session = DBTools.getSession();
+        UserMapper userMapper  = session.getMapper(UserMapper.class);
+        int count=0;
+        try {
+            count=userMapper.selectNewUserByTime(timeSpanBO);
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return count;
+    }
+
+    public List<RechargeRecordPO> selectAllRechargeRecord(TimeSpanBO timeSpanBO){
+        SqlSession session = DBTools.getSession();
+        UserMapper userMapper  = session.getMapper(UserMapper.class);
+        List<RechargeRecordPO> rechargeRecordPOList=new ArrayList<RechargeRecordPO>();
+        try {
+            rechargeRecordPOList=userMapper.selectAllRechargeRecord(timeSpanBO);
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return rechargeRecordPOList;
+    }
+
+    public List<ConsumeOrderPO> selectAllConsumption(TimeSpanBO timeSpanBO){
+        SqlSession session = DBTools.getSession();
+        UserMapper userMapper  = session.getMapper(UserMapper.class);
+        List<ConsumeOrderPO> consumeOrderPOList=new ArrayList<ConsumeOrderPO>();
+        try {
+            consumeOrderPOList=userMapper.selectAllConsumption(timeSpanBO);
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return consumeOrderPOList;
     }
 }

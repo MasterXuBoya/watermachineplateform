@@ -6,8 +6,9 @@ public class RechargeRecordPO {
     private Double payment;
     private Double present;
     private String orderId;
-    private String tradeno;
+    private String tradeNo;
     private String gmtCreate;
+    private String gmtModified;
 
     public int getId() {
         return id;
@@ -41,12 +42,12 @@ public class RechargeRecordPO {
         this.orderId = orderId;
     }
 
-    public String getTradeno() {
-        return tradeno;
+    public String getTradeNo() {
+        return tradeNo;
     }
 
-    public void setTradeno(String tradeno) {
-        this.tradeno = tradeno;
+    public void setTradeNo(String tradeNo) {
+        this.tradeNo = tradeNo;
     }
 
     public String getGmtCreate() {
@@ -65,6 +66,14 @@ public class RechargeRecordPO {
         this.present = present;
     }
 
+    public String getGmtModified() {
+        return gmtModified;
+    }
+
+    public void setGmtModified(String gmtModified) {
+        this.gmtModified = gmtModified;
+    }
+
     @Override
     public String toString() {
         return "RechargeRecordPO{" +
@@ -73,8 +82,9 @@ public class RechargeRecordPO {
                 ", payment=" + payment +
                 ", present=" + present +
                 ", orderId='" + orderId + '\'' +
-                ", tradeno='" + tradeno + '\'' +
+                ", tradeNo='" + tradeNo + '\'' +
                 ", gmtCreate='" + gmtCreate + '\'' +
+                ", gmtModified=" + gmtModified +
                 '}';
     }
 }

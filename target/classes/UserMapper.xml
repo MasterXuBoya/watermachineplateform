@@ -3,6 +3,18 @@
 <mapper namespace="com.terabits.mapper.UserMapper">
 
 
+    <resultMap id="rechargeMap" type="com.terabits.meta.po.User.RechargeRecordPO">
+        <id property="id" column="id" javaType="java.lang.Integer"></id>
+        <result property="state" column="state" javaType="java.lang.Integer"></result>
+        <result property="orderId" column="orderid" javaType="java.lang.String"></result>
+        <result property="tradeNo" column="tradeno" javaType="java.lang.String"></result>
+        <result property="openId" column="openid" javaType="java.lang.String"></result>
+        <result property="present" column="present" javaType="java.lang.Double"></result>
+        <result property="payment" column = "payment" javaType="java.lang.Double"></result>
+        <result property="gmtCreate" column="gmtcreate" javaType="java.lang.String"></result>
+        <result property="gmtModified" column="gmtmodified" javaType="java.lang.String"></result>
+    </resultMap>
+
     <resultMap id="consumeOrderMap" type="com.terabits.meta.po.User.ConsumeOrderPO">
         <id property="id" column="id" javaType="java.lang.Integer"></id>
         <result property="orderNo" column="orderno" javaType="java.lang.String"></result>
@@ -11,7 +23,7 @@
         <result property="payment" column="payment" javaType="java.lang.Double"></result>
         <result property="flow" column="flow" javaType="java.lang.Double"></result>
         <result property="gmtCreate" column="gmtcreate" javaType="java.lang.String"></result>
-        <result property="gmtModify" column="gmtmodify" javaType="java.lang.String"></result>
+        <result property="gmtModified" column="gmtmodified" javaType="java.lang.String"></result>
     </resultMap>
 
     <resultMap id="userMap" type="com.terabits.meta.po.User.UserPO">
@@ -53,5 +65,41 @@
 
     <select id="selectAllUser" resultMap="userMap">
         select * from user WHERE LENGTH (phone)=11
+    </select>
+
+    <select id="selectNewUserByTime" resultType="java.lang.Integer" parameterType="com.terabits.meta.bo.TimeSpanBO">
+        SELECT COUNT(*) FROM user
+        <where> LENGTH (phone)=11
+            <if test="beginTime != null and beginTime != ''">
+                and gmtcreate >= #{beginTime}
+            </if>
+            <if test="endTime != null and endTime != ''">
+                and gmtcreate &lt; #{endTime}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectAllRechargeRecord" parameterType="com.terabits.meta.bo.TimeSpanBO" resultMap="rechargeMap">
+        select * from rechargerecord
+        <where>
+            <if test="beginTime != null and beginTime != ''">
+                and gmtcreate >= #{beginTime}
+            </if>
+            <if test="endTime != null and endTime != ''">
+                and gmtcreate &lt; #{endTime}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectAllConsumption" parameterType="com.terabits.meta.bo.TimeSpanBO" resultMap="consumeOrderMap">
+        select * from consumeorder
+        <where>
+            <if test="beginTime != null and beginTime != ''">
+                and gmtcreate >= #{beginTime}
+            </if>
+            <if test="endTime != null and endTime != ''">
+                and gmtcreate &lt; #{endTime}
+            </if>
+        </where>
     </select>
 </mapper>

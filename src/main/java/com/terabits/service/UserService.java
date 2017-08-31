@@ -1,6 +1,8 @@
 package com.terabits.service;
 
+import com.terabits.meta.bo.TimeSpanBO;
 import com.terabits.meta.po.User.ConsumeOrderPO;
+import com.terabits.meta.po.User.RechargeRecordPO;
 import com.terabits.meta.po.User.UserPO;
 
 import java.util.List;
@@ -22,6 +24,12 @@ public interface UserService {
     public UserPO selectUserByNumber(String phone);
 
     public List<UserPO> selectAllUser();
+    public int selectNewUserByTime(TimeSpanBO timeSpanBO);
+
+    public List<RechargeRecordPO> selectAllRechargeRecord(TimeSpanBO timeSpanBO);
+
+
+    public List<ConsumeOrderPO> selectAllConsumption(TimeSpanBO timeSpanBO);
 
 
 }

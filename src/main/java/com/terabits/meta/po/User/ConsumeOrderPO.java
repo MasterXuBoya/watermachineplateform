@@ -2,6 +2,7 @@ package com.terabits.meta.po.User;
 
 public class ConsumeOrderPO {
     private int id;
+    private int state;
     private String orderNo;
     private String openId;
     private String displayId;
@@ -16,6 +17,14 @@ public class ConsumeOrderPO {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
     }
 
     public String getOrderNo() {
@@ -78,6 +87,7 @@ public class ConsumeOrderPO {
     public String toString() {
         return "ConsumeOrderPO{" +
                 "id=" + id +
+                ", state=" + state +
                 ", orderNo='" + orderNo + '\'' +
                 ", openId='" + openId + '\'' +
                 ", displayId='" + displayId + '\'' +

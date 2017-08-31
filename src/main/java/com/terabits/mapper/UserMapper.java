@@ -1,5 +1,6 @@
 package com.terabits.mapper;
 
+import com.terabits.meta.bo.TimeSpanBO;
 import com.terabits.meta.po.User.ConsumeOrderPO;
 import com.terabits.meta.po.User.RechargeRecordPO;
 import com.terabits.meta.po.User.UserPO;
@@ -18,6 +19,11 @@ public interface UserMapper {
     public int updateUser(UserPO userPO)throws Exception;
     //查询所有用户
     public List<UserPO> selectAllUser()throws Exception;
-    //public int addRemain(@Param("money") double money)throws Exception;
+    //通过时间查询新用户
+    public int selectNewUserByTime(TimeSpanBO timeSpanBO) throws Exception;
+    //通过时间查询所有充值记录
+    public List<RechargeRecordPO> selectAllRechargeRecord(TimeSpanBO timeSpanBO) throws Exception;
+    //通过时间查询所有消费记录
+    public List<ConsumeOrderPO> selectAllConsumption(TimeSpanBO timeSpanBO) throws Exception;
 
 }
