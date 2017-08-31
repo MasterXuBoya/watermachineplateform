@@ -20,19 +20,19 @@ import javax.servlet.http.HttpServletResponse;
     heartRate:  *20s
 */
 @Controller
-public class communicationcontroller
-{
+public class communicationcontroller {
     @Autowired
     private DeviceService deviceService;
-    @RequestMapping(value = "/parameter",method = RequestMethod.POST)
+
+    @RequestMapping(value = "/parameter", method = RequestMethod.POST)
     public void parameter(@RequestParam(value = "displayId") String str,
                           @RequestParam(value = "openTime") String openTime,
                           @RequestParam(value = "pulse") String pulse,
-                          @RequestParam(value = "hotPulse")String hotPulse,
+                          @RequestParam(value = "hotPulse") String hotPulse,
                           @RequestParam(value = "heartRate") String heartRate,
-                          HttpServletResponse response)throws Exception{
-        String[] displayIdArray=str.split(",");
-        for(String displayId:displayIdArray) {
+                          HttpServletResponse response) throws Exception {
+        String[] displayIdArray = str.split(",");
+        for (String displayId : displayIdArray) {
             //*****************************根据dispalyId查询deviceId*********************************************
             System.out.println(displayId + "  " + openTime + "  " + pulse + "  " + hotPulse + "  " + heartRate);
             TerminalPO terminalPO = deviceService.selectOneTerminal(displayId);

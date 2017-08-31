@@ -27,6 +27,7 @@
         <mapper resource="StatisticMapper.xml"/>
         <mapper resource="DeviceMapper.xml"/>
         <mapper resource="UserMapper.xml"/>
+        <mapper resource="FeedbackMapper.xml"/>
     </mappers>
 
 </configuration>

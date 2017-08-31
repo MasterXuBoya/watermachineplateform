@@ -24,7 +24,7 @@ public class PlatformGlobal {
     public static String urlDelete = HuaweiPlatformGlobal.APP_URL + "/iocm/app/dm/v1.1.0/devices/";
     public static String urlPostAsynCmd = HuaweiPlatformGlobal.APP_URL + "/iocm/app/cmd/v1.2.0/devices/%s/commands";
 
-    public static String manufacturerId= "terabits";
+    public static String manufacturerId = "terabits";
     public static String manufacturerName = "terabits";
     public static String deviceType = "ElectricityDevice";
     public static String protocolType = "CoAP";
@@ -32,7 +32,6 @@ public class PlatformGlobal {
     public static String serviceId = "ElectricityService";
     public static String callbackUrl = "http://112.124.6.31/watermachine/receive/data";
     public static int expireTime = 0;
-
 
 
     @SuppressWarnings("unchecked")
@@ -54,7 +53,7 @@ public class PlatformGlobal {
     }
 
     //模拟透传的模式，下发命令用这个方法
-    public static String command(byte[] data, String terminalId) throws Exception{
+    public static String command(byte[] data, String terminalId) throws Exception {
         String command = Base64.encodeBase64String(data);
         //terminalId = "fea083bc-33af-4c3c-b382-d76e18363292";
         HttpsUtil httpsUtil = new HttpsUtil();
@@ -63,7 +62,7 @@ public class PlatformGlobal {
         String tempUrl = String.format(urlPostAsynCmd, terminalId);
         //****************************jsonRequest***************************************
         String method = "START";
-        ObjectNode paras = JsonUtil.convertObject2ObjectNode("{\"rawData\":\"" + command +"\"}");
+        ObjectNode paras = JsonUtil.convertObject2ObjectNode("{\"rawData\":\"" + command + "\"}");
         Map<String, Object> paramCommand = new HashMap<String, Object>();
         paramCommand.put("serviceId", "RawData");
         paramCommand.put("method", method);
@@ -73,7 +72,7 @@ public class PlatformGlobal {
         Map<String, Object> paramPostAsynCmd = new HashMap<String, Object>();
         paramPostAsynCmd.put("command", paramCommand);
         paramPostAsynCmd.put("callbackUrl", callbackUrl);
-        paramPostAsynCmd.put("expireTime",expireTime);
+        paramPostAsynCmd.put("expireTime", expireTime);
         String jsonRequest = JsonUtil.jsonObj2Sting(paramPostAsynCmd);
         //*******************************header*******************************************
         String accessToken = login(httpsUtil);
@@ -88,7 +87,7 @@ public class PlatformGlobal {
         return responseBody;
     }
 
-    public static String command(String terminalId, String method, ObjectNode paras) throws Exception{
+    public static String command(String terminalId, String method, ObjectNode paras) throws Exception {
 
         HttpsUtil httpsUtil = new HttpsUtil();
         httpsUtil.initSSLConfigForTwoWay();
@@ -104,7 +103,7 @@ public class PlatformGlobal {
         Map<String, Object> paramPostAsynCmd = new HashMap<String, Object>();
         paramPostAsynCmd.put("command", paramCommand);
         paramPostAsynCmd.put("callbackUrl", callbackUrl);
-        paramPostAsynCmd.put("expireTime",expireTime);
+        paramPostAsynCmd.put("expireTime", expireTime);
 
         String jsonRequest = JsonUtil.jsonObj2Sting(paramPostAsynCmd);
 
