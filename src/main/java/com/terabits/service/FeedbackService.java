@@ -15,6 +15,14 @@ public interface FeedbackService {
     public int insertFeedback(FeedbackPO feedbackPO);
 
     /**
+     * 通过id更新反馈的状态
+     *
+     * @param status,id
+     * @return 受影响的行数
+     */
+    public int updateFeedbackStatusById(int status, int id);
+
+    /**
      * 通过电话号码来查询反馈
      *
      * @param phone
@@ -33,17 +41,17 @@ public interface FeedbackService {
     /**
      * 通过电话号码删除反馈
      *
-     * @param phone
+     * @param id
      * @return 受影响的行数
      */
-    public int deleteFeedbackByPhone(String phone);
+    public int deleteFeedbackById(int id);
 
     /**
-     * 通过时间段删除反馈
+     * 通过时间段删除已经解决的反馈
      *
      * @param timeSpanBO
      * @return 受影响的行数
      */
-    public int deleteFeedbackByTime(TimeSpanBO timeSpanBO);
+    public int deleteFeedbackByTimeOnlySolved(TimeSpanBO timeSpanBO, int status);
 
 }

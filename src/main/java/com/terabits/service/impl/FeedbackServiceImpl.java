@@ -12,7 +12,22 @@ import java.util.List;
 
 @Service("feedbackService")
 public class FeedbackServiceImpl {
-    //查询操作，session.close()
+
+    public int updateFeedbackStatusById(int status, int id) throws Exception {
+        SqlSession session = DBTools.getSession();
+        FeedbackMapper feedbackMapper = session.getMapper(FeedbackMapper.class);
+        List<FeedbackPO> feedbackPOS = new ArrayList<FeedbackPO>();
+        int affectedLines = 0;
+        try {
+            affectedLines = feedbackMapper.updateFeedbackStatusById(status, id);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+        return affectedLines;
+    }
+
     public List<FeedbackPO> selectFeedbackByPhone(String phone) throws Exception {
         SqlSession session = DBTools.getSession();
         FeedbackMapper feedbackMapper = session.getMapper(FeedbackMapper.class);
@@ -41,12 +56,12 @@ public class FeedbackServiceImpl {
         return feedbackPOS;
     }
 
-    public int deleteFeedbackByPhone(String phone) throws Exception {
+    public int deleteFeedbackById(int id) throws Exception {
         SqlSession session = DBTools.getSession();
         FeedbackMapper feedbackMapper = session.getMapper(FeedbackMapper.class);
         int affectedLines = 0;
         try {
-            affectedLines = feedbackMapper.deleteFeedbackByPhone(phone);
+            affectedLines = feedbackMapper.deleteFeedbackById(id);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -55,12 +70,12 @@ public class FeedbackServiceImpl {
         return affectedLines;
     }
 
-    public int deleteFeedbackByTime(TimeSpanBO timeSpanBO) throws Exception {
+    public int deleteFeedbackByTimeOnlySolved(TimeSpanBO timeSpanBO, int status) throws Exception {
         SqlSession session = DBTools.getSession();
         FeedbackMapper feedbackMapper = session.getMapper(FeedbackMapper.class);
         int affectedLines = 0;
         try {
-            affectedLines = feedbackMapper.deleteFeedbackByTime(timeSpanBO);
+            affectedLines = feedbackMapper.deleteFeedbackByTimeOnlySolved(timeSpanBO, status);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

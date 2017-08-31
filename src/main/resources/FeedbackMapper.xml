@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.terabits.mapper.AdminMapper">
+<mapper namespace="com.terabits.mapper.FeedbackMapper">
 
     <!--查询管理平台登录用户名和密码-->
 
@@ -26,6 +26,10 @@
         INSERT INTO feedback(nickname,phone,email,feedback,status,gmtsolve,gmtcreate) VALUES (#{nickname},#{phone},#{email},#{feedback},#{status},#{gmtSolve},now())
     </insert>
 
+    <update id="updateFeedbackStatusById" parameterType="java.lang.Integer">
+        UPDATE feedback SET status=#{status},gmtsolve=now() WHERE id=#{id}
+    </update>
+
     <select id="selectFeedbackByPhone" resultMap="feedbackMapper" parameterType="String">
         select * from feedback WHERE phone=#{phone}
     </select>
@@ -42,13 +46,14 @@
         </where>
     </select>
 
-    <delete id="deleteFeedbackByPhone" parameterType="String">
-        DELETE FROM feedback WHERE name=#{phone}
+    <delete id="deleteFeedbackById" parameterType="java.lang.Integer">
+        DELETE FROM feedback WHERE id=#{id}
     </delete>
 
-    <delete id="deleteFeedbackByTime" parameterType="com.terabits.meta.bo.TimeSpanBO">
+    <delete id="deleteFeedbackByTimeOnlySolved" parameterType="com.terabits.meta.bo.TimeSpanBO,java.lang.Integer">
         DELETE FROM feedback
         <where>
+            status=#{status}
             <if test="beginTime != null and beginTime != ''">
                 and gmtcreate >= #{beginTime}
             </if>
