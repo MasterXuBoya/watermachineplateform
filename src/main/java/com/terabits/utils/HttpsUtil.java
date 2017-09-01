@@ -187,6 +187,22 @@ public class HttpsUtil extends DefaultHttpClient
         
         return ((StreamClosedHttpResponse) response).getContent();
     }
+
+    public StreamClosedHttpResponse doPostJsonGetStatusLine(
+            String url, Map<String, String> headerMap, String content) {
+        HttpPost request = new HttpPost(url);
+        addRequestHeader(request, headerMap);
+
+        request.setEntity(new StringEntity(content,
+                ContentType.APPLICATION_JSON));
+
+        HttpResponse response = executeHttpRequest(request);
+        if (null == response) {
+            System.out.println("The response body is null.");
+        }
+
+        return (StreamClosedHttpResponse) response;
+    }
     
     public  String doPostJsonForString(String url, String content)
     {
@@ -334,6 +350,17 @@ public class HttpsUtil extends DefaultHttpClient
 
         return ((StreamClosedHttpResponse) response).getContent();
     }
+
+    public StreamClosedHttpResponse doDeleteGetStatusLine(String url,
+                                                          Map<String, String> headerMap) {
+        HttpResponse response = doDelete(url, headerMap);
+        if (null == response) {
+            System.out.println("The response body is null.");
+        }
+
+        return (StreamClosedHttpResponse) response;
+    }
+
 
     private static void addRequestHeader(HttpUriRequest request,
             Map<String, String> headerMap)

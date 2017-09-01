@@ -62,7 +62,7 @@ public class recordcontroller
     @Autowired
     private UserService userService;
     @RequestMapping(value = "/record",method = RequestMethod.GET)
-    public void record1(@RequestHeader("Authorization") String token,
+    public void record(@RequestHeader("Authorization") String token,
                                 HttpServletResponse response)throws Exception {
         System.out.println(token);
         AdminPO adminPO = JWT.unsign(token, AdminPO.class);

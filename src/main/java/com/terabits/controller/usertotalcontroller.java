@@ -1,17 +1,14 @@
 package com.terabits.controller;
 
-import com.terabits.constant.constant;
+import com.terabits.constant.Constant;
 import com.terabits.meta.bo.TimeSpanBO;
-import com.terabits.meta.po.Admin.AdminPO;
 import com.terabits.meta.po.User.ConsumeOrderPO;
 import com.terabits.meta.po.User.RechargeRecordPO;
 import com.terabits.meta.po.User.UserPO;
 import com.terabits.service.UserService;
-import com.terabits.utils.JWT;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -70,7 +67,7 @@ public class usertotalcontroller {
         //*****************************************************
 
             TimeSpanBO timeSpanBO1=new TimeSpanBO();
-            timeSpanBO1.setBeginTime(constant.StartTime);
+            timeSpanBO1.setBeginTime(Constant.StartTime);
             timeSpanBO1.setEndTime(instance);
             List<RechargeRecordPO> rechargeRecordPOList1=userService.selectAllRechargeRecord(timeSpanBO1);
             sum=0;
@@ -147,6 +144,8 @@ public class usertotalcontroller {
             //**********************************************************************************************************
             jsonObject.put("userTotal1",userTotal1);
             jsonObject.put("userTotal2",userTotal2);
+            //String tt=userTotal1.getString("userTotalNo");
+            //JSONObject mdm=jsonObject.getJSONObject("userTotal1");
             response.getWriter().print(jsonObject);
         }
 

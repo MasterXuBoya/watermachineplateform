@@ -21,4 +21,13 @@ public interface DeviceMapper {
 
     //返回当前查询饮水机的地址
     public String selectLocation(@Param("displayId") String displayId) throws Exception;
+
+    //根据displayId删除设备
+    public int deleteTerminal(@Param("displayId") String displayId) throws Exception;
+
+    //添加一个设备
+    public int insertTerminal(TerminalPO terminalPO) throws Exception;
+
+    public TerminalPO selectOneTerminalBySim(@Param("displayId") String displayId) throws Exception;
+
 }

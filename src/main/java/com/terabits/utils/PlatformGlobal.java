@@ -1,9 +1,14 @@
 package com.terabits.utils;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.terabits.constant.Constant;
 import com.terabits.constant.HuaweiPlatformGlobal;
+import com.terabits.service.HuaweiService;
+import jdk.nashorn.api.scripting.ScriptObjectMirror;
+import net.sf.json.JSONObject;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.http.HttpResponse;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -34,10 +39,9 @@ public class PlatformGlobal {
     public static int expireTime = 0;
 
 
-
     @SuppressWarnings("unchecked")
     //获取accesstoken
-    public static String login(HttpsUtil httpsUtil) throws Exception {
+    public  static String login(HttpsUtil httpsUtil) throws Exception {
 
         Map<String, String> paramLogin = new HashMap<String, String>();
         paramLogin.put("appId", appId);
@@ -51,6 +55,85 @@ public class PlatformGlobal {
         data = JsonUtil.jsonString2SimpleObj(bodyLogin, data.getClass());
         String accessToken = data.get("accessToken");
         return accessToken;
+    }
+
+    public static JSONObject add(String imei) throws Exception {
+
+        // Two-Way Authentication
+        HttpsUtil httpsUtil = new HttpsUtil();
+        httpsUtil.initSSLConfigForTwoWay();
+
+        // Authentication，get token
+        String accessToken = login(httpsUtil);
+
+        //Please make sure that the following parameter values have been modified in the Constant file.
+        String appId = Constant.APP_ID;
+        String urlReg = Constant.REGISTER_DEVICE;
+
+        //please replace the verifyCode and nodeId and timeout, when you use the demo.
+        String verifyCode = imei;
+        String nodeId = verifyCode;
+        Integer timeout = 0;
+
+        Map<String, Object> paramReg = new HashMap<String, Object>();
+        paramReg.put("verifyCode", verifyCode.toUpperCase());
+        paramReg.put("nodeId", nodeId.toUpperCase());
+        paramReg.put("timeout", timeout);
+
+        String jsonRequest = JsonUtil.jsonObj2Sting(paramReg);
+
+        Map<String, String> header = new HashMap<String, String>();
+        header.put("app_key", appId);
+        header.put("Authorization", "Bearer " + accessToken);
+
+        StreamClosedHttpResponse responseReg = httpsUtil.doPostJsonGetStatusLine(urlReg, header, jsonRequest);
+        String tmp=responseReg.getContent();
+        Map<String, String> data = new HashMap<String, String>();
+        data = JsonUtil.jsonString2SimpleObj(tmp, data.getClass());
+        String deviceId = data.get("deviceId");
+
+
+        System.out.println("RegisterDirectlyConnectedDevice, response content:");
+        System.out.print(responseReg.getStatusLine());
+        System.out.println(responseReg.getContent());
+        System.out.println();
+        System.out.println(deviceId);
+
+        JSONObject jsonObject=new JSONObject();
+        jsonObject.put("token",accessToken);
+        jsonObject.put("deviceId",deviceId);
+        return jsonObject;
+    }
+
+    public static String delete(String deviceId)throws Exception {
+
+        // Two-Way Authentication
+        HttpsUtil httpsUtil = new HttpsUtil();
+        httpsUtil.initSSLConfigForTwoWay();
+
+        // Authentication，get token
+        String accessToken = login(httpsUtil);
+
+
+        //Please make sure that the following parameter values have been modified in the Constant file.
+        String appId = HuaweiPlatformGlobal.APP_ID;
+
+        //please replace the deviceId, when you use the demo.
+        String urlDelete = Constant. DELETE_DEVICE + "/" +deviceId;
+
+        Map<String, String> header = new HashMap<String, String>();
+        header.put("app_key", appId);
+        header.put("Authorization", "Bearer " + accessToken);
+
+        //V1.4更新
+        StreamClosedHttpResponse responseDelete = httpsUtil.doDeleteGetStatusLine(urlDelete, header);
+
+        System.out.println("DeleteDirectlyConnectedDevice, response content:");
+        System.out.print(responseDelete.getStatusLine());
+        System.out.println(responseDelete.getContent());
+        System.out.println();
+        return accessToken;
+
     }
 
     //模拟透传的模式，下发命令用这个方法

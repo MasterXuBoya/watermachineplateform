@@ -55,4 +55,36 @@ public class DeviceServiceImpl implements DeviceService {
         }
         return location;
     }
+
+    public int deleteTerminal(String displayId){
+        SqlSession session = DBTools.getSession();
+        DeviceMapper deviceMapper= session.getMapper(DeviceMapper.class);
+        int result=0;
+        try {
+            result=deviceMapper.deleteTerminal(displayId);
+            session.commit();
+        }catch (Exception e){
+            e.printStackTrace();
+            session.rollback();
+        }finally {
+            session.close();
+        }
+        return result;
+    }
+
+    public int insertTerminal(TerminalPO terminalPO){
+        SqlSession session = DBTools.getSession();
+        DeviceMapper deviceMapper= session.getMapper(DeviceMapper.class);
+        int result=0;
+        try {
+            result=deviceMapper.insertTerminal(terminalPO);
+            session.commit();
+        }catch (Exception e){
+            e.printStackTrace();
+            session.rollback();
+        }finally {
+            session.close();
+        }
+        return result;
+    }
 }

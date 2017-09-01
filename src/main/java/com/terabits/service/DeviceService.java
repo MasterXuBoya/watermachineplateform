@@ -19,4 +19,8 @@ public interface DeviceService {
 
     public String selectLocation(String displayId) ;
 
+    public int deleteTerminal(String displayId);
+
+    public int insertTerminal(TerminalPO terminalPO);
+
 }

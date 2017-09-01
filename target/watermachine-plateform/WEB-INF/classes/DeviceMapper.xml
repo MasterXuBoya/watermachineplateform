@@ -30,4 +30,12 @@
         select location from terminal where displayid = #{displayId}
     </select>
 
+    <delete id="deleteTerminal" parameterType="java.lang.String">
+        delete from terminal where displayid = #{displayId}
+    </delete>
+
+    <insert id="insertTerminal" keyProperty="id" parameterType="com.terabits.meta.po.Device.TerminalPO">
+        insert into terminal (imei, deviceid, displayid, webid, state,location, simid, simremain, gmtcreate, gmtmodified,strength) values
+        (#{imei}, #{deviceId}, #{displayId}, #{webId}, #{state}, #{location},#{simId}, #{simRemain}, now(),now(),#{strength})
+    </insert>
 </mapper>

@@ -7,6 +7,7 @@ public class TerminalPO {
     private String displayId;
     private String webId;
     private int state;
+    private int strength;
     private String location;
     private String simId;
     private double simRemain;
@@ -101,6 +102,14 @@ public class TerminalPO {
         this.gmtModified = gmtModified;
     }
 
+    public int getStrength() {
+        return strength;
+    }
+
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
     @Override
     public String toString() {
         return "TerminalPO{" +
@@ -110,6 +119,7 @@ public class TerminalPO {
                 ", displayId='" + displayId + '\'' +
                 ", webId='" + webId + '\'' +
                 ", state=" + state +
+                ", strength=" + strength +
                 ", location='" + location + '\'' +
                 ", simId='" + simId + '\'' +
                 ", simRemain=" + simRemain +
