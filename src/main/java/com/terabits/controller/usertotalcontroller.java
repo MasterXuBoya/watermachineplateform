@@ -7,12 +7,16 @@ import com.terabits.meta.po.User.RechargeRecordPO;
 import com.terabits.meta.po.User.UserPO;
 import com.terabits.service.UserService;
 import net.sf.json.JSONObject;
+import org.springframework.web.bind.annotation.RequestHeader;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletResponse;
+import com.terabits.meta.po.Admin.AdminPO;
+import com.terabits.utils.JWT;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -23,14 +27,14 @@ public class usertotalcontroller {
     @Autowired
     private UserService userService;
     @RequestMapping(value = "/usertotal",method = RequestMethod.GET)
-    public void usertotal(//@RequestHeader("Authorization") String token,
+    public void usertotal(@RequestHeader("Authorization") String token,
                           HttpServletResponse response)throws Exception{
-        /*AdminPO adminPO = JWT.unsign(token, AdminPO.class);
+        AdminPO adminPO = JWT.unsign(token, AdminPO.class);
         if (adminPO == null) {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("status", 0);
             response.getWriter().print(jsonObject);
-        } else {*/
+        } else {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("status", 1);
          //**********************************************************************************************************
@@ -148,5 +152,6 @@ public class usertotalcontroller {
             //JSONObject mdm=jsonObject.getJSONObject("userTotal1");
             response.getWriter().print(jsonObject);
         }
+    }
 
 }
